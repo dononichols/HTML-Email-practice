@@ -10,6 +10,19 @@
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
+
 		@media screen and (max-width: 599.98px) {
 
       }
@@ -23,9 +36,16 @@
 
       }
 	</style>
+
+   
+<!--/// Conditional statement to remove spacing at the sides of banner images in outlook ///-->
+   <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        table {border-collapse: collapse!important;}
+      </style>
+   <![endif]--> 
 </head>
 <body style="Margin:0; padding: 0; min-width: 100%; background-color: #dde0e1;">
-
 
 
    <!--/// Conditional statement to target body styles ///-->
@@ -35,7 +55,9 @@
          body {background-color: #dde0e1!important;}
          body, table, td, p, a {font-family: sans-serif, Arial, Helvitica!important;}
       </style>
-   <![endif]-->  
+   <![endif]--> 
+   
+   
    
    <center style="width: 100%; table-layout: fixed; background-color: #dde0e1; padding-bottom: 40px;">
 
@@ -47,6 +69,19 @@
                This is our preheader text! SALE 25% OFF!
             </div>
          <!-- End of Preheader (remove comments) -->
+
+         <!-- /// This Conditional statement(ghost table)is for the table that will contain all the table rows (tr )///  -->
+
+         <!--[if (gte mso 9) | (IE)]>
+      <table width="600" align="center" style="border-spacing: 0; color: #5656;" role="presentation">
+         <tr>
+            <td syle="padding: 0;">
+   <![endif]-->
+
+   <table align="center" style="border-spacing: 0; color: #5656; font-family: 'Lato', sans-serif, Arial, Helvitica!important;  background-color: #fafdfe; Margin: 0; padding: 0; width: 100%;
+   max-width: 600px;" role="presentation">
+
+
    <h1>Testing</h1>
 
    
@@ -78,8 +113,21 @@
 <!-- START FOOTER -->
 <!-- END FOOTER -->
 
+
+</table>
+
+
+<!--/// Conditional statement to target body styles-CLOSE ///-->
+
+ <!--[if (gte mso 9) | (IE)]>
+ </td>
+ </tr>
+ </table>
+   <![endif]-->
       </div>
    </center>
+
+   
 
 </body>
 </html>
